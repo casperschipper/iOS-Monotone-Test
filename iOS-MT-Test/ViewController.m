@@ -19,6 +19,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self.view setBackgroundColor:[UIColor redColor]];
+    
+    //this is the second push
+    UILabel *theLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 200, 20)];
+    theLabel.text = @"hello there";
+    [theLabel setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:theLabel];
 }
 
 - (void)didReceiveMemoryWarning
